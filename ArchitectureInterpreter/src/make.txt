@@ -1,0 +1,23 @@
+//Below is a test file of how assembly code should be written
+//The Powerpoint where we give you the instructions 
+//might be outdated but the code written is not and should
+//be up to date
+//please read atleast the Interpreter Class for how to 
+//setup an instruction
+//Below is a test setup of some assembly code
+
+manny	noop
+	add s0 s1 s2
+	inc s3 s4
+	slt s5 s6 t0
+	addi t1 a0 label
+	inci a1 label
+	slti v0 ra label
+test	beq t1 a0 manny
+	lw s0 label zero
+	sw s0 test zero
+	jal label
+	j label
+	jr ra
+	and s0 s1 s2
+	or s3 s4 s5
